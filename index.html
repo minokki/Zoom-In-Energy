@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- meta -->
+    <meta property="og:url" content="https://gopang.netlify.app" />
+    <meta property="og:title" content="R&D 줌인에너지" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="http://gopang.netlify.app/img/main-img-1.png"
+    />
+    <meta property="og:description" content="R&D 줌인에너지 홈페이지" />
+    <!-- 네이버 서치어드바이저 페이지설명  -->
+    <meta
+      name="description"
+      content="R&D 사업을 진행하는 줌인에너지 사이트입니다"
+    />
+
+    <!-- 제이쿼리 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- 부트스트랩 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <!-- Font-Awesome -->
+    <script
+      src="https://kit.fontawesome.com/cfb5806266.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Carouse -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <!-- Nav CSS -->
+    <link rel="stylesheet" href="/css/nav.css" />
+    <!-- Button CSS -->
+    <link rel="stylesheet" href="/css/button.css" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/css/main.css" />
+    <!-- Footer CSS -->
+    <link rel="stylesheet" href="/css/footer.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>(주)줌인에너지 R&D</title>
+  </head>
+
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar fixed-top">
+      <div class="navbar_logo">
+        <a href="index.html"><img src="img/logo.png" alt="logo" /></a>
+      </div>
+
+      <ul class="navbar_menu">
+        <li><a href="zoom-business.html">R&D 사업안내</a></li>
+        <li><a href="zoom-about.html">R&D 주요기술</a></li>
+        <li><a href="zoom-gallery.html">R&D 제품</a></li>
+        <li><a href="zoom-contact.html">Contact</a></li>
+      </ul>
+
+      <ul class="navbar_link">
+        <button
+          class="w-btn-neon2"
+          type="button"
+          onclick="window.open('https://zie.kr/')"
+        >
+          Zoom-In
+        </button>
+      </ul>
+
+      <div class="toggle-nav">
+        <a class="menu-trigger" href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Carousel Start -->
+
+    <div
+      id="carouselExampleFade"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            id="responsive-image"
+            src="img/main-img-1.png"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption cap-1">
+            <h1 class="caption-h1">Eco 연구개발 사업</h1>
+            <h1 class="caption-h1">Recycling 연구개발 사업</h1>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/main-img-2.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption cap-2">
+            <h3 class="caption-h3">지속가능성 개발 기업</h3>
+            <p class="caption-p2">
+              Eco성장 Recycling변화 패러다임에 도전하는 연구개발 기업
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleFade"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleFade"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Carousel End -->
+
+    <!-- Cnt Start -->
+    <div class="cnt container-fluid d-flex align-items-center">
+      <div class="container" data-aos="fade-up" data-aos-duration="1500">
+        <div class="section-title">
+          <p
+            style="
+              font-size: 40px;
+
+              margin-bottom: 0;
+              color: #2e7842;
+            "
+          >
+            One-Stop
+          </p>
+
+          <p style="font-weight: bold; font-size: 50px; color: #2e7842">
+            Recycling Solution System
+          </p>
+          <h1 class="display-6">
+            <strong>친환경사업</strong>과
+            <strong>탄소중립 리사이클링</strong>
+            연구개발을 도전하는 기업
+          </h1>
+        </div>
+        <div class="row text-center">
+          <div class="col text-center text-lg-start">
+            <h5
+              class="mb-4 text-center"
+              style="font-size: 16px; color: rgba(0, 0, 0, 0.6)"
+            >
+              (주)줌인에너지는 신재생에너지의 친환경, 탄소중립, 리사이클링
+              분야의 도전적 연구개발로 글로벌 리사이클링 문제 해결방안과
+              산업현장적용 될 수 있는 창의적인 연구개발 제품을 개발하고
+              있습니다.
+            </h5>
+
+            <div>
+              <a
+                href="회사소개서-01.png"
+                class="w-btn-neon2"
+                type="button"
+                download
+                >회사소개서</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Cnt End -->
+
+    <!-- youtube Start -->
+    <div class="container-fluid youtube py-5 bg-light">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-7" data-aos="fade-right" data-aos-duration="1500">
+            <div class="iframe-container">
+              <video controls autoplay>
+                <source src="zoom-in-video.mp4" type="video/mp4">
+            </div>
+          </div>
+          <div class="col-lg-5" data-aos="fade-left" data-aos-duration="1500">
+            <p
+              style="
+                font-weight: bold;
+                font-size: 20px;
+                color: #2e7842;
+                margin-bottom: 60px;
+              "
+            >
+              태양광 폐패널의 유가자원 업사이클링(UP-CYCLING)
+            </p>
+            <h3 class="mb-4">
+              태양광 폐패널 원스탑 리사이클링 솔루션<br />
+
+              (One-Stop Recycling Solution System)
+            </h3>
+
+            <p class="mb-5" style="color: rgba(0, 0, 0, 0.5); font-size: 16px">
+              Eco사업 중 태양광 발전시스템에서 발생하는 태양광 폐패널의 파쇄 및
+              분쇄<br />
+              공정, 열분해공정등의
+              <span class="text-dark">리사이클링 기술</span> 을 적용하여
+              유가자원인 알루미늄,<br />
+              강화유리, 오일등 회수 할 수 있는
+              <span class="text-dark">재활용 솔루션</span>을 제안합니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- youtube End -->
+
+    <!-- How To Use Start -->
+    <div class="container-fluid how-to-use">
+      <div class="container py-5">
+        <div
+          class="section-title"
+          style="margin-bottom: 50px"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
+          <h1 style="color: #2e7842">태양광 폐패널 전용 파쇄기 제품</h1>
+          <p style="font-size: 16px; margin-bottom: 0; color: #2e7842">
+            Solar Panel Waste Prototype
+          </p>
+        </div>
+
+        <div
+          class="row g-4 align-items-center"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <div class="col-lg-7">
+            <div class="image-text-container">
+              <img
+                class="img-fluid animated pulse infinite"
+                src="img/main4.gif"
+                alt="Alternative Text"
+              />
+            </div>
+            <p class="text-center"><태양광 폐패널 전용 파쇄기 시제품></p>
+          </div>
+          <div class="col-lg-5 how-to-use-text">
+            <div class="row g-5">
+              <div class="col-12 d-flex justify-content-center">
+                <div
+                  class="btn-square rounded-circle border flex-shrink-0 text-center"
+                  style="width: 80px; height: 80px"
+                >
+                  <i
+                    class="fa-solid fa-check fa-2x"
+                    style="line-height: 80px; color: #2e7842"
+                  ></i>
+                </div>
+                <div class="ps-3" style="width: 300px">
+                  <h5>태양광 폐패널 물리적 공정</h5>
+                  <hr class="w-25 bg-primary my-2" />
+                  <span style="color: rgba(0, 0, 0, 0.5)"
+                    >정션박스, 알루미늄 프레임을 분리</span
+                  >
+                </div>
+              </div>
+              <div class="col-12 d-flex justify-content-center">
+                <div
+                  class="btn-square rounded-circle border flex-shrink-0 text-center"
+                  style="width: 80px; height: 80px"
+                >
+                  <i
+                    class="fa-solid fa-check fa-2x"
+                    style="line-height: 80px; color: #2e7842"
+                  ></i>
+                </div>
+                <div class="ps-3" style="width: 300px">
+                  <h5>태양광 폐패널 파쇄 및 분쇄 공정</h5>
+                  <hr class="w-25 my-2" />
+                  <span style="color: rgba(0, 0, 0, 0.5)"
+                    >백시트, 유리, EVA 파쇄 룰러를 통해<br />
+                    일정크기로 파쇄 및 분쇄</span
+                  >
+                </div>
+              </div>
+              <div class="col-12 d-flex justify-content-center">
+                <div
+                  class="btn-square rounded-circle border flex-shrink-0 text-center"
+                  style="width: 80px; height: 80px"
+                >
+                  <i
+                    class="fa-solid fa-check fa-2x"
+                    style="line-height: 80px; color: #2e7842"
+                  ></i>
+                </div>
+                <div class="ps-3" style="width: 300px">
+                  <h5>태양광 폐패널 선별 공정</h5>
+                  <hr class="w-25 bg-primary my-2" />
+                  <span style="color: rgba(0, 0, 0, 0.5)"
+                    >강화유리, EVA파쇄물, 실리콘,<br />
+                    유가금속 등을 비중별 선별 회수</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Start -->
+    <div class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-wrap row">
+            <div class="img-box text-center">
+              <img src="img/logo.png" alt="" />
+            </div>
+            <div class="footer-text-box">
+              <p>
+                <strong>상호명&emsp;</strong
+                >(주)줌인에너지<strong>&emsp;대표&emsp;</strong>곽노준
+              </p>
+              <p>
+                <strong>주소&emsp;</strong>강원도 원주시 상지대길83 벤처창업관
+                305호
+              </p>
+              <p>
+                <strong>사업자등록번호&emsp;</strong>303-87-01781
+                <strong>&emsp;이메일&emsp;</strong>zoomin_dh@naver.com
+              </p>
+              <p><strong>고객지원TEL&emsp;</strong>033)731-0882</p>
+              <p>
+                <strong>고객지원FAX&emsp;</strong>033)731-0883(평일 09:00 -
+                18:00 / 주말 및 공휴일 휴무)
+              </p>
+              <p class="copyright footer-bottom-text">
+                copyrightⓒ 2023.줌인에너지 all right reseved
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- 제이쿼리 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- 캐러셀 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Footer End -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- 부트스트랩 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <!-- 사용자스크립트 -->
+    <script src="/js/main.js"></script>
+    <!-- nav -->
+    <script src="/js/nav.js"></script>
+  </body>
+</html>

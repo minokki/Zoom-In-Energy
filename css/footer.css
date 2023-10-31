@@ -1,0 +1,66 @@
+/* Font */
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+.footer {
+  background: #2a2d32 url("/img/footer-back-Img.png") center center no-repeat;
+  background-size: auto;
+  padding: 40px 0 35px 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.img-box > img {
+  max-width: 100%;
+}
+
+.footer .footer-wrap {
+  max-width: 1184px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer .footer-wrap > div {
+  width: calc(50% - 10px);
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.footer .footer-wrap > div:last-child {
+  padding-right: 0;
+}
+
+.footer .footer-wrap .footer-logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer .footer-wrap .footer-logo img {
+  margin-right: -100px;
+}
+
+.footer .footer-text-box p {
+  color: #b3bac5;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.footer .footer-text-box strong {
+  color: #fff;
+  font-weight: 400;
+}
+
+.footer .footer-text-box .footer-link {
+  border-top: 2px solid #404247;
+  padding-top: 5px;
+}
+
+.footer .footer-text-box .footer-bottom-text {
+  font-size: 15px;
+  color: #fff;
+  font-weight: 200;
+  opacity: 0.7;
+}

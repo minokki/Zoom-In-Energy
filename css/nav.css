@@ -1,0 +1,246 @@
+/* Font */
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+/* basic */
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+/* nav */
+.navbar a {
+  text-decoration: none;
+}
+
+.active-bg {
+  background: rgb(0, 0, 0, 0.6);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 150px;
+}
+
+.navbar.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.navbar_logo {
+  padding: 8px 8px;
+}
+
+.navbar_menu {
+  display: flex;
+  list-style: none;
+}
+.navbar_menu a {
+  color: #fff;
+}
+
+.navbar_menu li {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 8px 30px;
+}
+
+.navbar_menu li a:hover {
+  color: rgba(0, 0, 0, 1);
+  border-radius: 4px;
+}
+
+.navbar_link {
+  list-style: none;
+  display: flex;
+  margin-right: 50px;
+}
+
+.navbar_link li {
+  font-size: 24px;
+  padding: 12px 12px;
+}
+
+.toggle-nav {
+  display: none;
+  position: absolute;
+  right: 0;
+}
+
+.navbar.sticked {
+  background: rgb(0, 0, 0, 0.6);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  animation: slideDown 0.4s ease-in-out forwards;
+}
+
+/* slideDown 애니메이션*/
+@keyframes slideDown {
+  from {
+    top: -100px;
+  }
+  to {
+    top: 0;
+  }
+}
+
+/* 햄버거 버튼 */
+.menu-trigger {
+  position: absolute;
+  width: 50px;
+  right: 30px;
+  height: 44px;
+}
+
+.menu-trigger,
+.menu-trigger span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s;
+}
+
+.menu-trigger span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.menu-trigger span:nth-of-type(1) {
+  top: 5px;
+}
+
+.menu-trigger span:nth-of-type(2) {
+  top: 20px;
+}
+
+.menu-trigger span:nth-of-type(3) {
+  bottom: 5px;
+}
+
+/* 햄버거 x표시 */
+.menu-trigger.active-1 span:nth-of-type(1) {
+  transform: translateY(15px) rotate(-46deg);
+}
+
+.menu-trigger.active-1 span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.menu-trigger.active-1 span:nth-of-type(3) {
+  transform: translateY(-15px) rotate(46deg);
+}
+
+/* nav 1376px */
+@media screen and (max-width: 1376px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 0px;
+    max-width: 1376px;
+  }
+  .navbar_logo {
+    padding-left: 8px;
+  }
+  .navbar_logo img {
+    width: 100px;
+    height: 50px;
+    padding-left: 8px;
+  }
+
+  .navbar_menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 8px 12px;
+  }
+
+  .navbar_menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar_link {
+    display: none;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+  }
+  .toggle-nav {
+    display: block;
+  }
+  .menu-trigger {
+    top: 5px;
+    right: 10px;
+  }
+
+  .navbar_menu.active,
+  .navbar_link.active {
+    display: flex;
+  }
+}
+
+/* nav 1024px */
+@media screen and (max-width: 1024px) {
+  .navbar {
+    max-width: 1024px;
+  }
+
+  .navbar_logo {
+    padding-left: 8px;
+  }
+
+  .navbar_logo img {
+    height: 50px;
+  }
+}
+
+/* nav 768px */
+@media screen and (max-width: 768px) {
+  .navbar {
+    width: 768px;
+  }
+
+  .navbar_logo img {
+    height: 40px;
+  }
+}
+
+/* nav 425px */
+@media screen and (max-width: 425px) {
+  .navbar {
+    width: 425px;
+  }
+}
+
+/* nav 375px */
+@media screen and (max-width: 375px) {
+  .navbar {
+    width: 375px;
+  }
+}
+
+/* nav 325px */
+@media screen and (max-width: 325px) {
+  .navbar {
+    width: 325px;
+  }
+}

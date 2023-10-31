@@ -1,0 +1,106 @@
+/* Font */
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+/* basic */
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+
+/* Cnt */
+.cnt {
+  position: relative;
+  padding-top: 12rem;
+  padding-bottom: 6rem;
+  background: url(/img/zoom-about-back-img.png) center center no-repeat;
+  background-size: cover;
+  min-height: 450px;
+}
+
+/* Tab */
+#myTab {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  width: 100%;
+}
+
+#myTab .nav-item {
+  margin: 0;
+}
+
+#myTab .nav-link {
+  border: none;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  font-size: 22px;
+  text-align: center;
+}
+@media (max-width: 425px) {
+  #myTab .nav-link {
+    font-size: 16px;
+  }
+}
+
+#myTab .nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+#myTab .nav-link.active {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-top: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 18px;
+}
+
+.custom-td {
+  border-right: 1px solid #ddd;
+  width: 150px;
+}
+
+/* Img */
+.image-container {
+  text-align: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
+  padding: 10px;
+}
+
+.point {
+  width: 8px;
+  height: 60px;
+  margin-bottom: -68px;
+  background-color: #6da5ca;
+}
+
+@media (max-width: 1024px) {
+  .cnt {
+    min-height: 300px;
+  }
+  .cnt .container h1 {
+    margin-top: -60px;
+  }
+}

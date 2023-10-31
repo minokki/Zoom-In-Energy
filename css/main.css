@@ -1,0 +1,396 @@
+/* Font */
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+/* basic */
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+a {
+  text-decoration: none;
+}
+
+/* Cnt */
+.cnt {
+  position: relative;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1024px) {
+  .cnt {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.carousel-item .cap-1 {
+  top: 50%;
+}
+.carousel-item .cap-2 {
+  top: 75%;
+}
+
+/* 비디오 스타일링 */
+.iframe-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%; /* 부모 컨테이너의 가로 너비를 100%로 설정 */
+  padding-top: 56.25%; /* 16:9 비율을 유지하기 위한 값 (16 / 9 * 100%) */
+}
+
+.iframe-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* 이미지와 텍스트를 감싸는 컨테이너 */
+.image-text-container {
+  position: relative;
+  padding-top: 52.25%; /* 16:9 비율을 유지하기 위한 값 (16 / 9 * 100%) */
+  overflow: hidden;
+  text-align: center;
+}
+
+/* 이미지 스타일 */
+.image-text-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* how-to-use-text */
+.how-to-use-text {
+  margin-top: -30px;
+}
+
+/* Custom animation left */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-5%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* Custom animation right */
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(5%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* Custom animation up */
+@keyframes slideInFromUp {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* Custom animation down */
+@keyframes slideInFromDown {
+  0% {
+    transform: translateY(100%); /* 100%에서 시작하고 위로 올라갑니다. */
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0); /* 0% 위치로 도착하여 표시됩니다. */
+    opacity: 1;
+  }
+}
+
+.carousel-caption .caption-h1 {
+  animation: slideInFromUp 2s ease-in-out;
+  font-size: 60px;
+  text-align: right;
+  text-shadow: 8px 8px 12px rgba(0, 0, 0, 0.6);
+}
+
+.carousel-caption .caption-p {
+  animation: slideInFromDown 2s ease-in-out;
+  text-align: right;
+  font-size: 30px;
+  margin-right: 150px;
+  text-shadow: 8px 8px 12px rgba(0, 0, 0, 0.6);
+}
+
+.carousel-caption .caption-h3 {
+  animation: slideInFromLeft 2s ease-in-out;
+  font-size: 60px;
+  text-align: right;
+  margin-right: 80px;
+  text-shadow: 8px 8px 12px rgba(0, 0, 0, 0.6);
+}
+
+.carousel-caption .caption-p2 {
+  animation: slideInFromRight 2s ease-in-out;
+  font-size: 30px;
+  text-align: right;
+  margin-right: -150px;
+  text-shadow: 8px 8px 12px rgba(0, 0, 0, 0.6);
+}
+
+/* 캐러셀 줌인 */
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.carousel-inner .carousel-item img {
+  animation: zoomIn 4s ease;
+  animation-fill-mode: forwards;
+}
+
+/*** carousel mobile ***/
+@media screen and (max-width: 2000px) {
+  .carousel-item .cap-1 {
+    top: 45%;
+    margin-right: -40px;
+  }
+  .carousel-item .cap-2 {
+    top: 70%;
+  }
+  .carousel-caption .caption-h1 {
+    font-size: 50px;
+  }
+
+  .carousel-caption .caption-p {
+    font-size: 35px;
+    margin-bottom: 0;
+  }
+
+  .carousel-caption .caption-h3 {
+    font-size: 50px;
+    margin-right: 150px;
+  }
+
+  .carousel-caption .caption-p2 {
+    font-size: 35px;
+    margin-right: -250px;
+  }
+}
+/* carousel 1376px */
+@media screen and (max-width: 1700px) {
+  .carousel-item .cap-1 {
+    top: 45%;
+    margin-right: 0px;
+  }
+  .carousel-item .cap-2 {
+    top: 70%;
+  }
+  .carousel-caption .caption-h1 {
+    font-size: 40px;
+  }
+
+  .carousel-caption .caption-p {
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+
+  .carousel-caption .caption-h3 {
+    font-size: 40px;
+    margin-right: 50px;
+  }
+
+  .carousel-caption .caption-p2 {
+    font-size: 22px;
+    margin-right: -150px;
+  }
+}
+/* carousel 1376px */
+@media screen and (max-width: 1440px) {
+  .carousel-item .cap-1 {
+    top: 45%;
+    margin-right: -40px;
+  }
+  .carousel-item .cap-2 {
+    top: 70%;
+  }
+  .carousel-caption .caption-h1 {
+    font-size: 40px;
+  }
+
+  .carousel-caption .caption-p {
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+
+  .carousel-caption .caption-h3 {
+    font-size: 40px;
+    margin-right: 0px;
+    text-align: center;
+  }
+
+  .carousel-caption .caption-p2 {
+    font-size: 22px;
+    margin-right: 0px;
+    text-align: center;
+  }
+}
+
+/* carousel 1024px */
+@media (max-width: 1024px) {
+  .carousel-item .cap-1 {
+    top: 50%;
+    margin-right: -40px;
+  }
+  .carousel-item .cap-2 {
+    top: 65%;
+  }
+  .carousel-caption .caption-h1 {
+    font-size: 30px;
+  }
+
+  .carousel-caption .caption-p {
+    font-size: 25px;
+    margin-bottom: 0;
+  }
+
+  .carousel-caption .caption-h3 {
+    font-size: 30px;
+    margin-right: 0px;
+    text-align: center;
+  }
+
+  .carousel-caption .caption-p2 {
+    font-size: 18px;
+    margin-right: 0px;
+    text-align: center;
+  }
+  .how-to-use-text {
+    margin-top: 0;
+  }
+}
+
+/* carousel 768px */
+@media (max-width: 768px) {
+  #responsive-image {
+    content: url("/img/main-img-1-mobile_768.png");
+  }
+  .carousel-item .cap-1 {
+    top: 50%;
+    margin-right: -40px;
+  }
+  .carousel-item .cap-2 {
+    top: 75%;
+  }
+  .carousel-inner .carousel-item img {
+    height: 500px;
+  }
+
+  .carousel-caption .caption-h1 {
+    font-size: 24px;
+    text-align: right;
+    font-weight: bold;
+  }
+
+  .carousel-caption .caption-p {
+    text-align: right;
+    font-size: 20px;
+  }
+
+  .carousel-caption .caption-h3 {
+    font-size: 22px;
+    margin-right: 0px;
+    text-align: center;
+  }
+
+  .carousel-caption .caption-p2 {
+    font-size: 13px;
+    margin-right: 0px;
+    text-align: center;
+  }
+}
+
+/* carousel 425px */
+@media (max-width: 425px) {
+  #responsive-image {
+    content: url("/img/main-img-1-mobile_425.png");
+  }
+  .carousel-item .cap-1 {
+    top: 58%;
+    margin-right: 0;
+  }
+  .carousel-item .cap-2 {
+    top: 70%;
+  }
+  .carousel-inner .carousel-item img {
+    height: 400px;
+  }
+
+  .carousel-caption .caption-h1 {
+    font-size: 18px;
+    margin-right: -45px;
+  }
+
+  .carousel-caption .caption-p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .carousel-caption .caption-h3 {
+    font-size: 18px;
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .carousel-caption .caption-p2 {
+    font-size: 12px;
+    text-align: center;
+    margin-right: 0px;
+  }
+}
+
+/* carousel 375px */
+@media (max-width: 375px) {
+  .carousel-item .cap-1 {
+    top: 55%;
+  }
+  .carousel-item .cap-2 {
+    top: 70%;
+  }
+  .carousel-inner .carousel-item img {
+    height: 400px;
+  }
+
+  .carousel-caption .caption-h1 {
+    font-size: 18px;
+    margin-right: -45px;
+  }
+
+  .carousel-caption .caption-h3 {
+    font-size: 18px;
+    margin-right: 0px;
+    text-align: center;
+  }
+
+  .carousel-caption .caption-p2 {
+    font-size: 12px;
+    margin-right: 0px;
+    text-align: center;
+  }
+}
